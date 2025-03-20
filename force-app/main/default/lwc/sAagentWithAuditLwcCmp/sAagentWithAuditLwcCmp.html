@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Ask the Super Agent !" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Prompt" value={prompt} onchange={handlePromptChange}>
+                ></lightning-input>
+            <br/>
+            <lightning-button variant="brand" label="Generate Response" title="Generate response" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+            <br/><br/>
+            <lightning-textarea label="Response" value={response} readonly> </lightning-textarea>
+        </div>
+    </lightning-card>
+</template>
