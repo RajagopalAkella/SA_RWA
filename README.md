@@ -10,6 +10,8 @@ Steps to ensure before installing this package:
 1. Setup > Einstein Setup > Turn on Einstein
 2. Setup > Agents > Enable Agentforce
 3. Setup > Einstein for Sales > Turn on Sales Emails
+4. Load the VulnerableWordsData.csv available in \data folder by going to Setup > Data Import Wizard (ignore first two columns while mapping "ID, SA Restricted Word Name")
+Note: Above 4th point is specific to the requirement. If you don't need this data, and have your specific data, you can ignore this load, and enter your load in SA_Restricted_Word__c object.
 
 Checking the working of component post installation of package:
 1. Assign this permission set to user / profile: SA_RWA_Permission
@@ -17,3 +19,7 @@ Checking the working of component post installation of package:
 https://developer.salesforce.com/docs/einstein/genai/guide/supported-models.html
 3. Click on all apps, and find "Super Agent With Word Auditing"
 4. On the Home tab, the agent and Audits object are placed to see the working and the output records.
+
+When you want to Uninstall:
+1. Remove / delete the assigned permission set "SA_RWA_Permission" to any user.
+2. Go to Installed Packages and click on Uninstall.
