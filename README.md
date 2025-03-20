@@ -6,6 +6,9 @@ This solution is going to address the needs of the customers in this case, by co
 Since these words are entered in a custom object, it can be made as custom list specific to the organization.
 Also, the custom model can be configurable by entering it in the Custom Lable which comes as part of the package.
 
+Link to install as Unlocked package (as it is generated from a developer sandbox):
+https://test.salesforce.com/packaging/installPackage.apexp?p0=04tF70000003Ayd&isdtp=p1
+
 Steps to ensure before installing this package:
 1. Setup > Einstein Setup > Turn on Einstein
 2. Setup > Agents > Enable Agentforce
